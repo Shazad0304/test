@@ -1,9 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
-import { IsApiError, ApiError } from '../utils/ApiError';
+import { IsApiError } from '../utils/ApiError';
 const currentEnv = process.env.NODE_ENV || 'development';
 /**
  * Global error handler for all routes
- * @param {ApiError} err
  * @param {Request} req
  * @param {Response} res
  * @param {NextFunction} next

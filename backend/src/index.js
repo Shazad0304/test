@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
-import expressService from "./services/express.service.js";
-import sequelizeService from "./services/sequelize.service.js";
-import awsService from "./services/aws.service.js";
+import expressService from "../src/services/express.service";
+import sequelizeService from "../src/services/sequelize.service";
+import awsService from "../src/services/aws.service";
 dotenv.config();
 
 const services = [expressService, awsService, sequelizeService];
